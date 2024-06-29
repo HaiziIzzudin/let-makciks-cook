@@ -148,20 +148,33 @@ Wrespon?.addEventListener('mouseleave', () => {
 
 
 
-function gotoMenu(ethnicity:string, menu_index:number) {
-  ethnicity = ethnicity
-  menu_index = menu_index
-  console.info(ethnicity + menu_index)
-  window.location.href = './../menu.html'
-}
+
+
+
+
 
 
 export let ethnicity:string;
 export let menu_index:number;
-
 let myDiv: HTMLDivElement | null;
+
+
+export function gotoMenu(ethnicity:string, menu_index:number) {
+  ethnicity = ethnicity
+  menu_index = menu_index
+  console.info('menudata=' + ethnicity + menu_index)
+}
+
+
+
+
+
 
 myDiv = document.getElementById('W0') as HTMLDivElement;
 myDiv.addEventListener('click', () => {
   gotoMenu('western', 0)
+});
+myDiv = document.getElementById('W1') as HTMLDivElement;
+myDiv.addEventListener('click', () => {
+  gotoMenu('western', 1)
 });
