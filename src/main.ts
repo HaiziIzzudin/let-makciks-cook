@@ -1,26 +1,7 @@
 import './style.scss'
-// import * as xml2js from 'xml2js';
-// import * as fs from 'fs';
 
-// function datafromxml(kind:string, index:number) {
-//   const parser = new xml2js.Parser();
-  // fs.readFile(__dirname + './menu.xml', (_err, data) => {
-  //   parser.parseString(data.toString(), (_err, result) => {
 
-  //     if (kind == 'title') {
-  //       return result.recipe.asian[0].menu[index].title[0]
-  //     } else if (kind == 'description') {
-  //       return result.recipe.asian[0].menu[index].title[0]
-  //     } else if (kind == 'author') {
-  //       return result.recipe.asian[0].menu[index].by[0]
-  //     } else if (kind == 'minutes') {
-  //       return result.recipe.asian[0].menu[index].preptime[0]
-  //     } else if (kind == 'kcalnumber') {
-  //       return result.recipe.asian[0].menu[index].kcal[0]
-  //     }
-  //   });
-  // });
-// };
+
 
 
 class customMenu extends HTMLElement {
@@ -34,7 +15,49 @@ class customMenu extends HTMLElement {
       <h1>hello</h1>
       <p>whoareyou</p>
       `
+    } else if (typeof section === 'string' && parseInt(section) === 2) {
+      menuHTML += `
+      <div>
+        <h5>Recipe by</h5>
+        <p>What</p>
+      </div>
+      <div>
+        <h5>Preparation time (estimate)</h5>
+        <p>15 min</p>
+      </div>
+      <div>
+        <h5>Energy</h5>
+        <p>1000 kcal</p>
+      </div>
+      <div>
+        <h5>Tools/apparatus</h5>
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+        </ol>
+      </div>
+      `
+    } else if (typeof section === 'string' && parseInt(section) === 3) {
+      menuHTML += `
+      <h5>Step 1</h5>
+      <p>do this</p>
+
+      <h5>Step 2</h5>
+      <p>do this</p>
+
+      <h5>Step 3</h5>
+      <p>do this</p>
+      `
     }
+    else if (typeof section === 'string' && parseInt(section) === 4) {
+      menuHTML += `
+      <img src="images/pizza.jpg">
+      `
+    }
+    this.innerHTML = menuHTML;
   }
 }
 customElements.define ('custom-menu', customMenu)
