@@ -152,7 +152,7 @@ nav {
   // ANIMATION 0%
   height: 0px;
   transition-duration: 0.5s;
-  transition-delay: 0.3s;
+  transition-delay: 0.2s;
   padding: 0 20px 0px;
 
   img {
@@ -379,11 +379,12 @@ footer {
 
   custom-menu {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 3fr;
 
     div {
       border-left: 1px solid var(--text-black);
       border-right: 1px solid var(--text-black);
+    &:last-child {text-align: left;}
     }
   }
 }
@@ -397,6 +398,7 @@ footer {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 #section4 {

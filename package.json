@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
+    "dev": "node xml2jsParse/parser.cjs && vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -17,9 +17,6 @@
   },
   "dependencies": {
     "@material/web": "^1.5.0",
-    "browserify-fs": "^1.0.0",
-    "express": "^4.19.2",
-    "isomorphic-unfetch": "^4.0.2",
     "path": "^0.12.7",
     "sass": "^1.77.2",
     "ts-node": "^10.9.2",

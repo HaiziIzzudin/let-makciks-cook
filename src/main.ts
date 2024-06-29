@@ -1,5 +1,34 @@
 import './style.scss'
+import * as menuJSON from './../xml2jsParse/menu.json'
 
+
+const menuKindSelect = menuJSON.recipe
+
+const menuSelectWestern = menuKindSelect.western[0] // no selection
+
+const WesternMenuSelection = menuSelectWestern.menu // yg ni kita expose utk index selection
+
+type MenuType = {
+  title: string[];
+  description: string[];
+  by: string[];
+  preptime: string[];
+  kcal: string[];
+  ingredients: { item: string[] }[];
+  instructions: { step: string[] }[];
+  images: { image: string[] }[];
+};
+
+const menu = WesternMenuSelection[0] as MenuType;
+
+const title = menu.title[0]; // no selection
+const description = menu.description[0]; // no selection
+const by = menu.by[0]; // no selection
+const preptime = menu.preptime[0]; // no selection
+const kcal = menu.kcal[0]; // no selection
+const listItems = (menu.ingredients[0].item).map((item) => `<li>${item}</li>`).join('');
+const listSteps = (menu.instructions[0].step).map((step) => `${step}`).map((step) => step);
+const listImages = (menu.images[0].image).map((image) => `${image}`).map((image) => image);
 
 
 
@@ -12,45 +41,38 @@ class customMenu extends HTMLElement {
 
     if (typeof section === 'string' && parseInt(section) === 1) {
       menuHTML += `
-      <h1>hello</h1>
-      <p>whoareyou</p>
+      <h1>${title}</h1>
+      <p>${description}</p>
       `
     } else if (typeof section === 'string' && parseInt(section) === 2) {
       menuHTML += `
       <div>
         <h5>Recipe by</h5>
-        <p>What</p>
+        <p>${by}</p>
       </div>
       <div>
         <h5>Preparation time (estimate)</h5>
-        <p>15 min</p>
+        <p>${preptime} minutes</p>
       </div>
       <div>
         <h5>Energy</h5>
-        <p>1000 kcal</p>
+        <p>${kcal} kcal</p>
       </div>
       <div>
-        <h5>Tools/apparatus</h5>
-        <ol>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
-        </ol>
+        <h5 style="margin-left: 25px;">Tools/apparatus</h5>
+        <ul style="list-style-type: square;">
+          ${listItems}
+        </ul>
       </div>
       `
     } else if (typeof section === 'string' && parseInt(section) === 3) {
-      menuHTML += `
-      <h5>Step 1</h5>
-      <p>do this</p>
-
-      <h5>Step 2</h5>
-      <p>do this</p>
-
-      <h5>Step 3</h5>
-      <p>do this</p>
-      `
+      
+      for (let i = 0; i < listSteps.length; i++) {
+        menuHTML += `
+        <h5>Step ${i+1}</h5>
+        <p>${listSteps[i]}</p>
+        `
+      }
     }
     else if (typeof section === 'string' && parseInt(section) === 4) {
       menuHTML += `
@@ -88,7 +110,9 @@ customElements.define ('custom-menu', customMenu)
 class customHeader extends HTMLElement {
   connectedCallback() {
     
-    this.innerHTML = `
+    let navHTML = ''
+
+    navHTML += `
     <nav>
       
       <div class="nav-flex">
@@ -117,21 +141,78 @@ class customHeader extends HTMLElement {
       </div>
     
     </nav>
+    
+    
+    <div id="W-menulist" class="">`
+    
+    
+    // for (let i = 0; i < WesternMenuSelection.length; i++) {
+    //   const menu = WesternMenuSelection[i] as MenuType;
+    //   const title = menu.title[0]
+    //   navHTML += `
+    //   `
+    // }
+    
+    navHTML += '</div>'
 
-    <div id="W-menulist" class="">
-      <div>
-        <img src="images/pizza.jpg"><h2>Menu Western 1</h2><p>Description of menu 1</p></div>
-      <div>
-        <img src="images/pizza.jpg"><h2>Menu Western 2</h2><p>Description of menu 2</p></div>
-      <div>
-        <img src="images/pizza.jpg"><h2>Menu Western 3</h2><p>Description of menu 3</p></div>
-      <div>
-        <img src="images/pizza.jpg"><h2>Menu Western 4</h2><p>Description of menu 4</p></div>
-    </div>
-    `
+    this.innerHTML = navHTML
   }
 }
 customElements.define ('custom-header', customHeader)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 class customFooter extends HTMLElement {
@@ -188,6 +269,67 @@ class customFooter extends HTMLElement {
   }
 }
 customElements.define ('custom-footer', customFooter)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

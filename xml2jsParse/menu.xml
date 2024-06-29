@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl"?>
+
+<recipe>
+  <western>
+    <menu>
+      <title>Shiitake Mushroom Soup</title>
+      <description>Shiitake mushroom soup is a savory and flavorful soup made with shiitake mushrooms as the main ingredient. It can be creamy or brothy, depending on the recipe.  It often includes other vegetables like onions, carrots, and garlic, and can be seasoned with herbs like thyme or nutmeg.</description>
+      <by>Nana Aziz</by>
+      <preptime>5</preptime>
+      <kcal>227</kcal>
+
+      <ingredients>
+        <item>A packet of shitake mushrooms half mixed and half ground</item>
+        <item>6 pieces of cheese</item>
+        <item>1 chicken cube</item>
+        <item>6 tablespoons of powdered milk</item>
+        <item>Sufficient water according to the concentration of the soup</item>
+        <item>4 tablespoons of wheat flour mixed with a cup of water</item>
+        <item>A few dried parsley leaves</item>
+        <item>Salt to taste</item>
+      </ingredients>
+
+      <instructions>
+        <step>Put the ground ingredients together, and put them in a pan or pot with a stem. Bring to a boil over medium heat.</step>
+        <step>Add the flour mixture, mixed mushrooms, and other ingredients when it boils. Do not leave stirring until thickened.</step>
+        <step>If it is not thick enough, add more flour mixture.</step>
+        <step>And it is ready to be served. Goodluck.</step>
+      </instructions>
+
+      <images>
+        <image>images/Western/Shiitake/soup1.jpg</image>
+        <image>images/Western/Shiitake/soup2.jpg</image>
+        <image>images/Western/Shiitake/soup3.jpg</image>
+      </images>
+    </menu>
+    <menu>
+      <title>Spaghetti Aglio Olio Shrimp</title>
+      <description>Shiitake mushroom soup is a savory and flavorful soup made with shiitake mushrooms as the main ingredient. It can be creamy or brothy, depending on the recipe.  It often includes other vegetables like onions, carrots, and garlic, and can be seasoned with herbs like thyme or nutmeg.</description>
+      <by>Hayati Abdullah</by>
+      <preptime>30</preptime>
+      <kcal>484</kcal>
+
+      <ingredients>
+        <item>Boiled 1 packet spaghetti (do not discard the boiled water)</item>
+        <item>Shrimp</item>
+        <item>Chopped garlic</item>
+        <item>Aglio Olio spice</item> 
+        <item>Spaghetti broth</item>
+        <item>Salt</item>
+        <item>Anchovy powder</item>
+        <item>Broccoli</item>
+        <item>Capsicum</item>
+        <item>Mushroom</item>
+        <item>Cherry tomatoes</item>
+        <item>Chopped parsley</item>
+      </ingredients>
+
+      <instructions>
+        <step>Fry the shrimp until cooked. Remove and set aside.</step>
+        <step>In the same pan as fried shrimp, saute garlic until fragrant.</step>
+        <step>Add aglio olio spices and stir-fry for a while.</step>
+        <step>Then add the spaghetti boiled water. Season with salt and anchovy powder.</step>
+        <step>Add broccoli, capsicum and mushroom. Close the pan for a moment.</step>
+        <step>When the vegetables are half cooked, add the spaghetti, cherry tomatoes, parsley, and shrimp that were fried earlier.</step>
+        <step>Mix well. Ready to be served.</step>
+      </instructions>
+
+      <images>
+        <image>soup1.jpg</image>
+        <image>soup2.jpg</image>
+        <image>soup3.jpg</image>
+      </images>
+    </menu>
+    <menu></menu>
+  </western>
+  <asian></asian>
+  <middleeast></middleeast>
+</recipe>
