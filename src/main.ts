@@ -1,6 +1,7 @@
 import './style.scss'
 import './theme.ts'
 import { jsondata } from './menucontents'
+import { FeatBtn, W0Div, W1Div } from './headerfooter.ts';
 
 
 
@@ -76,7 +77,12 @@ export function setupMenu(element: HTMLDivElement) {
     
     element.innerHTML = menuHTML
   }
-  element.addEventListener('click', () => setMenu(ethnicity, menu_index + 1))
+  
+  FeatBtn.addEventListener('click', () => setMenu(ethnicity, 1))
+  W0Div.addEventListener('click', () => setMenu(ethnicity, 0))
+  W1Div.addEventListener('click', () => setMenu(ethnicity, 1))
+  
+  // NI ADALAH DEFAULT VALUE
   setMenu(ethnicity, menu_index)
   
 }

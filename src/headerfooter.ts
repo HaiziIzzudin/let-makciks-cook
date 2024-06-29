@@ -45,7 +45,6 @@ class customHeader extends HTMLElement {
       <div id="W${k}">
         <img src="${jsondata('western', k, 'image')[0]}">
         <h2>${jsondata('western', k, 'title')}</h2>
-        <p>${jsondata('western', k, 'description')}</p>
       </div>
       `
     }
@@ -147,34 +146,20 @@ Wrespon?.addEventListener('mouseleave', () => {
 
 
 
+export const FeatBtn = document.getElementById('featured-btn') as HTMLButtonElement;
+export const W0Div = document.getElementById('W0') as HTMLDivElement;
+export const W1Div = document.getElementById('W1') as HTMLDivElement;
 
-
-
-
-
-
-
-export let ethnicity:string;
-export let menu_index:number;
-let myDiv: HTMLDivElement | null;
-
-
-export function gotoMenu(ethnicity:string, menu_index:number) {
-  ethnicity = ethnicity
-  menu_index = menu_index
-  console.info('menudata=' + ethnicity + menu_index)
-}
-
-
-
-
-
-
-myDiv = document.getElementById('W0') as HTMLDivElement;
-myDiv.addEventListener('click', () => {
-  gotoMenu('western', 0)
-});
-myDiv = document.getElementById('W1') as HTMLDivElement;
-myDiv.addEventListener('click', () => {
-  gotoMenu('western', 1)
-});
+const menuclickarea = document.getElementById('W-menulist') as HTMLDivElement; // receive click
+const showMenu = document.getElementById('specified-menu') as HTMLDivElement; // reactions
+const featuredcard = document.getElementById('featured-card') as HTMLDivElement; // reactions
+menuclickarea.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
+FeatBtn.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
