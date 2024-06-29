@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menu.xsl"?>
+
+<recipe>
+  <western></western>
+  <asian>
+    <menu>
+      <title>Shiitake Mushroom Soup</title>
+      <description>This 20-minute dish features tender shrimp sautéed with garlic and tossed with fettuccine in a luscious, creamy Parmesan sauce. With its decadent yet simple flavors and quick prep time, it makes an irresistible weeknight meal.</description>
+      <by>Nana Aziz</by>
+      <preptime>5</preptime>
+      <kcal>227</kcal>
+
+      <ingredients>
+        <item>A packet of shitake mushrooms half mixed and half ground</item>
+        <item>6 pieces of cheese</item>
+        <item>1 chicken cube</item>
+        <item>6 tablespoons of powdered milk</item>
+        <item>Sufficient water according to the concentration of the soup</item>
+        <item>4 tablespoons of wheat flour mixed with a cup of water</item>
+        <item>A few dried parsley leaves</item>
+        <item>Salt to taste</item>
+      </ingredients>
+
+      <instructions>
+        <step>Put the ground ingredients together, and put them in a pan or pot with a stem. Bring to a boil over medium heat.</step>
+        <step>Add the flour mixture, mixed mushrooms, and other ingredients when it boils. Do not leave stirring until thickened.</step>
+        <step>If it is not thick enough, add more flour mixture.</step>
+        <step>And it is ready to be served. Goodluck.</step>
+      </instructions>
+    </menu>
+    <menu></menu>
+    <menu></menu>
+  </asian>
+  <middleeast></middleeast>
+</recipe>
