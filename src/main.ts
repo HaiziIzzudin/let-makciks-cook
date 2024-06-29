@@ -19,80 +19,36 @@ type MenuType = {
   images: { image: string[] }[];
 };
 
-const menu = WesternMenuSelection[0] as MenuType;
-
-const title = menu.title[0]; // no selection
-const description = menu.description[0]; // no selection
-const by = menu.by[0]; // no selection
-const preptime = menu.preptime[0]; // no selection
-const kcal = menu.kcal[0]; // no selection
-const listItems = (menu.ingredients[0].item).map((item) => `<li>${item}</li>`).join('');
-const listSteps = (menu.instructions[0].step).map((step) => `${step}`).map((step) => step);
-const listImages = (menu.images[0].image).map((image) => `${image}`).map((image) => image);
 
 
 
 
-class customMenu extends HTMLElement {
-  connectedCallback() {
-    const section = this.getAttribute('section') || 0; 
+let menuArr: string[] = []; // Empty array of strings
+let menuDesc: string[] = []; // Empty array of strings
+let menuBy: string[] = []; // Empty array of strings
+let menuPrep: string[] = []; // Empty array of strings
+let menuKcal: string[] = []; // Empty array of strings
 
-    let menuHTML = '';
+let menuPhoto: string[] = []; // Empty array of strings
+let listSteps: string[]; // Empty array of strings
+let listItems: string; // Empty array of strings
 
-    if (typeof section === 'string' && parseInt(section) === 1) {
-      menuHTML += `
-      <h1>${title}</h1>
-      <p>${description}</p>
-      `
-    } else if (typeof section === 'string' && parseInt(section) === 2) {
-      menuHTML += `
-      <div>
-        <h5>Recipe by</h5>
-        <p>${by}</p>
-      </div>
-      <div>
-        <h5>Preparation time (estimate)</h5>
-        <p>${preptime} minutes</p>
-      </div>
-      <div>
-        <h5>Energy</h5>
-        <p>${kcal} kcal</p>
-      </div>
-      <div>
-        <h5 style="margin-left: 25px;">Tools/apparatus</h5>
-        <ul style="list-style-type: square;">
-          ${listItems}
-        </ul>
-      </div>
-      `
-    } else if (typeof section === 'string' && parseInt(section) === 3) {
-      
-      for (let i = 0; i < listSteps.length; i++) {
-        menuHTML += `
-        <h5>Step ${i+1}</h5>
-        <p>${listSteps[i]}</p>
-        `
-      }
-    }
-    else if (typeof section === 'string' && parseInt(section) === 4) {
-      menuHTML += `
-      <img src="images/pizza.jpg">
-      `
-    }
-    this.innerHTML = menuHTML;
-  }
+// Add elements later
+for (let i = 0; i < WesternMenuSelection.length; i++) {
+  const menu = WesternMenuSelection[i] as MenuType;
+  
+  listItems = (menu.ingredients[0].item).map((item) => `<li>${item}</li>`).join('');
+  listSteps = (menu.instructions[0].step).map((step) => `${step}`).map((step) => step);
+  const listImages = (menu.images[0].image).map((image) => `${image}`).map((image) => image);
+  
+  menuArr.push(menu.title[0])
+  menuDesc.push(menu.description[0])
+  menuBy.push(menu.by[0])
+  menuPrep.push(menu.preptime[0])
+  menuKcal.push(menu.kcal[0])
+
+  menuPhoto.push(listImages[0])
 }
-customElements.define ('custom-menu', customMenu)
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -145,13 +101,16 @@ class customHeader extends HTMLElement {
     
     <div id="W-menulist" class="">`
     
+    for (let k = 0; k < menuArr.length; k++) {
+      navHTML += `
+      <div id="W${k}">
+        <img src="${menuPhoto[k]}">
+        <h2>${menuArr[k]}</h2>
+        <p>${menuDesc[k]}</p>
+      </div>
+      `
+    }
     
-    // for (let i = 0; i < WesternMenuSelection.length; i++) {
-    //   const menu = WesternMenuSelection[i] as MenuType;
-    //   const title = menu.title[0]
-    //   navHTML += `
-    //   `
-    // }
     
     navHTML += '</div>'
 
@@ -159,6 +118,210 @@ class customHeader extends HTMLElement {
   }
 }
 customElements.define ('custom-header', customHeader)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// UPON CLICKING, SET MENU SELECTOR TO CORRESPONDING OUTPUT
+
+
+async function updateReturnCookie(value: number): Promise<number> {
+  document.cookie = `menuselection=${value}`;
+
+  let cookieString = document.cookie;
+  console.log('cookie=' + cookieString)
+  
+  let cookies = cookieString.split(';');
+
+  for (let i = 0; i < cookies.length; i++) {
+    const cookie = cookies[i].trim();
+    if (cookie.startsWith('menuselection=')) {
+      const value = parseInt(cookie.split('=')[1]);
+      return value;
+    }
+  }
+  return 0;
+}
+
+console.log('cookietest =' + updateReturnCookie(0))
+
+
+let menuselector:number = 0;
+let myDiv: HTMLDivElement | null;
+
+myDiv = document.getElementById('W0') as HTMLDivElement;
+myDiv.addEventListener('click', async () => {
+  menuselector = await updateReturnCookie(0);
+  window.location.href = './menu.html';
+});
+
+myDiv = document.getElementById('W1') as HTMLDivElement;
+myDiv.addEventListener('click', async () => {
+  menuselector = await updateReturnCookie(1);
+  window.location.href = './menu.html';
+});
+
+
+
+
+
+
+
+
+
+
+class customMenu extends HTMLElement {
+  
+  connectedCallback() {
+    const section = this.getAttribute('section') || 0; 
+
+    let menuHTML = '';
+
+    if (typeof section === 'string' && parseInt(section) === 1) {
+      menuHTML += `
+      <h1>${menuArr[menuselector]}</h1>
+      <p>${menuDesc[menuselector]}</p>
+      `
+    } else if (typeof section === 'string' && parseInt(section) === 2) {
+      menuHTML += `
+      <div>
+        <h5>Recipe by</h5>
+        <p>${menuBy[menuselector]}</p>
+      </div>
+      <div>
+        <h5>Preparation time (estimate)</h5>
+        <p>${menuPrep[menuselector]} minutes</p>
+      </div>
+      <div>
+        <h5>Energy</h5>
+        <p>${menuKcal[menuselector]} kcal</p>
+      </div>
+      <div>
+        <h5 style="margin-left: 25px;">Tools/apparatus</h5>
+        <ul style="list-style-type: square;">
+          ${listItems}
+        </ul>
+      </div>
+      `
+    } else if (typeof section === 'string' && parseInt(section) === 3) {
+      
+      for (let i = 0; i < listSteps.length; i++) {
+        menuHTML += `
+        <h5>Step ${i+1}</h5>
+        <p>${listSteps[i]}</p>
+        `
+      }
+    }
+    else if (typeof section === 'string' && parseInt(section) === 4) {
+      menuHTML += `
+      <img src="images/pizza.jpg">
+      `
+    }
+    this.innerHTML = menuHTML;
+  }
+}
+customElements.define ('custom-menu', customMenu)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -288,104 +451,6 @@ customElements.define ('custom-footer', customFooter)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// DETECT DARK OR LIGHT MODE
-let theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-console.log(theme);
-if (theme == 'dark') {
-    document.querySelector('body')?.classList.add('dark-theme');
-} else {
-    document.querySelector('body')?.classList.add('light-theme');
-}
-
-
-
-
-// UNLESS OVERRIDING LIGHT/DARK CONFIGURATIONS
-let themeButton = document.querySelector('.theme-button');
-let myQuerySelector = document.querySelector("body")
-themeButton?.addEventListener('click', () => {
-    if (myQuerySelector?.classList.contains('light-theme')) {
-        myQuerySelector?.classList.remove('light-theme');
-        myQuerySelector?.classList.add('dark-theme');
-    } else {
-        myQuerySelector?.classList.remove('dark-theme');
-        myQuerySelector?.classList.add('light-theme');
-    }
-});
-
-
-
-
-
-
-
-
 // ADD QUERY SELECTOR FOR DROPDOWN
 let Wddown = document.querySelector('#W-ddown');
 let Wrespon = document.querySelector('#W-menulist');
@@ -407,6 +472,11 @@ Wrespon?.addEventListener('mouseleave', () => {
   Wrespon?.classList.remove('show'); 
   xbtn?.classList.remove('xbtn-show');
 });
+
+
+
+
+
 
 
 

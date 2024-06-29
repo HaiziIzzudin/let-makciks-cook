@@ -36,7 +36,7 @@
     </menu>
     <menu>
       <title>Spaghetti Aglio Olio Shrimp</title>
-      <description>Shiitake mushroom soup is a savory and flavorful soup made with shiitake mushrooms as the main ingredient. It can be creamy or brothy, depending on the recipe.  It often includes other vegetables like onions, carrots, and garlic, and can be seasoned with herbs like thyme or nutmeg.</description>
+      <description>This is a simple Italian pasta dish made with spaghetti, garlic, olive oil, and chili flakes. "Aglio e olio" translates to "garlic and oil" in Italian. The shrimp are typically cooked separately and added on top of the pasta for a protein boost. It's a quick and flavorful dish.</description>
       <by>Hayati Abdullah</by>
       <preptime>30</preptime>
       <kcal>484</kcal>
@@ -72,7 +72,6 @@
         <image>soup3.jpg</image>
       </images>
     </menu>
-    <menu></menu>
   </western>
   <asian></asian>
   <middleeast></middleeast>
