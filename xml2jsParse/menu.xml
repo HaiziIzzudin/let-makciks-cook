@@ -73,6 +73,84 @@
       </images>
     </menu>
   </western>
-  <asian></asian>
-  <middleeast></middleeast>
+  <asian>
+    <menu>
+      <title>Spaghetti Aglio Olio Shrimp</title>
+      <description>This is a simple Italian pasta dish made with spaghetti, garlic, olive oil, and chili flakes. "Aglio e olio" translates to "garlic and oil" in Italian. The shrimp are typically cooked separately and added on top of the pasta for a protein boost. It's a quick and flavorful dish.</description>
+      <by>Hayati Abdullah</by>
+      <preptime>30</preptime>
+      <kcal>484</kcal>
+
+      <ingredients>
+        <item>Boiled 1 packet spaghetti (do not discard the boiled water)</item>
+        <item>Shrimp</item>
+        <item>Chopped garlic</item>
+        <item>Aglio Olio spice</item> 
+        <item>Spaghetti broth</item>
+        <item>Salt</item>
+        <item>Anchovy powder</item>
+        <item>Broccoli</item>
+        <item>Capsicum</item>
+        <item>Mushroom</item>
+        <item>Cherry tomatoes</item>
+        <item>Chopped parsley</item>
+      </ingredients>
+
+      <instructions>
+        <step>Fry the shrimp until cooked. Remove and set aside.</step>
+        <step>In the same pan as fried shrimp, saute garlic until fragrant.</step>
+        <step>Add aglio olio spices and stir-fry for a while.</step>
+        <step>Then add the spaghetti boiled water. Season with salt and anchovy powder.</step>
+        <step>Add broccoli, capsicum and mushroom. Close the pan for a moment.</step>
+        <step>When the vegetables are half cooked, add the spaghetti, cherry tomatoes, parsley, and shrimp that were fried earlier.</step>
+        <step>Mix well. Ready to be served.</step>
+      </instructions>
+
+      <images>
+        <image>soup1.jpg</image>
+        <image>soup2.jpg</image>
+        <image>soup3.jpg</image>
+      </images>
+    </menu>
+  </asian>
+  <middleeast>
+    <menu>
+      <title>Spaghetti Aglio Olio Shrimp</title>
+      <description>This is a simple Italian pasta dish made with spaghetti, garlic, olive oil, and chili flakes. "Aglio e olio" translates to "garlic and oil" in Italian. The shrimp are typically cooked separately and added on top of the pasta for a protein boost. It's a quick and flavorful dish.</description>
+      <by>Hayati Abdullah</by>
+      <preptime>30</preptime>
+      <kcal>484</kcal>
+
+      <ingredients>
+        <item>Boiled 1 packet spaghetti (do not discard the boiled water)</item>
+        <item>Shrimp</item>
+        <item>Chopped garlic</item>
+        <item>Aglio Olio spice</item> 
+        <item>Spaghetti broth</item>
+        <item>Salt</item>
+        <item>Anchovy powder</item>
+        <item>Broccoli</item>
+        <item>Capsicum</item>
+        <item>Mushroom</item>
+        <item>Cherry tomatoes</item>
+        <item>Chopped parsley</item>
+      </ingredients>
+
+      <instructions>
+        <step>Fry the shrimp until cooked. Remove and set aside.</step>
+        <step>In the same pan as fried shrimp, saute garlic until fragrant.</step>
+        <step>Add aglio olio spices and stir-fry for a while.</step>
+        <step>Then add the spaghetti boiled water. Season with salt and anchovy powder.</step>
+        <step>Add broccoli, capsicum and mushroom. Close the pan for a moment.</step>
+        <step>When the vegetables are half cooked, add the spaghetti, cherry tomatoes, parsley, and shrimp that were fried earlier.</step>
+        <step>Mix well. Ready to be served.</step>
+      </instructions>
+
+      <images>
+        <image>soup1.jpg</image>
+        <image>soup2.jpg</image>
+        <image>soup3.jpg</image>
+      </images>
+    </menu>
+  </middleeast>
 </recipe>
