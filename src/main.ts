@@ -7,10 +7,10 @@ import {
   W1Div, 
   W0DivFoo, 
   W1DivFoo, 
-  // W2Div,
-  // W3Div,
-  // W2DivFoo,
-  // W3DivFoo
+  W2Div,
+  W3Div,
+  W2DivFoo,
+  W3DivFoo
 } from './headerfooter.ts';
 
 
@@ -94,14 +94,14 @@ export function setupMenu(element: HTMLDivElement) {
   // HEADER ANCHOR TAG LINKING TO FOOD
   W0Div.addEventListener('click', () => setMenu(ethnicity, 0))
   W1Div.addEventListener('click', () => setMenu(ethnicity, 1))
-  // W2Div.addEventListener('click', () => setMenu(ethnicity, 2))
-  // W3Div.addEventListener('click', () => setMenu(ethnicity, 3))
+  W2Div.addEventListener('click', () => setMenu(ethnicity, 2))
+  W3Div.addEventListener('click', () => setMenu(ethnicity, 3))
 
   // FOOTER ANCHOR TAG LINKING TO FOOD
   W0DivFoo.addEventListener('click', () => setMenu(ethnicity, 0))
   W1DivFoo.addEventListener('click', () => setMenu(ethnicity, 1))
-  // W2DivFoo.addEventListener('click', () => setMenu(ethnicity, 2))
-  // W3DivFoo.addEventListener('click', () => setMenu(ethnicity, 3))
+  W2DivFoo.addEventListener('click', () => setMenu(ethnicity, 2))
+  W3DivFoo.addEventListener('click', () => setMenu(ethnicity, 3))
   
 
 

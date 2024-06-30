@@ -2,15 +2,21 @@ import * as menuJSON from './../xml2jsParse/menu.json'
 
 
 // TYPE INFERENCE
-type MenuType = {
-  title: string[];
-  description: string[];
-  by: string[];
-  preptime: string[];
-  kcal: string[];
-  ingredients: { item: string[] }[];
-  instructions: { step: string[] }[];
-  images: { image: string[] }[];
+type MenuType = { 
+  title: string[]; 
+  description: string[]; 
+  by: string[]; 
+  preptime: string[]; 
+  kcal: string[]; 
+  ingredients: { 
+    item: string[]; 
+  }[]; 
+  instructions: { 
+    step: string[]; 
+  }[]; 
+  images: {
+    image: string[];
+  }[]; 
 }[];
 
 

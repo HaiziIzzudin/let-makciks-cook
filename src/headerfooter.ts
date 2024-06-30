@@ -222,14 +222,14 @@ MErespon?.addEventListener('mouseleave', () => {
 // HEADER - ANCHOR TAG LINKING TO FOOD
 export const W0Div = document.getElementById('W0') as HTMLElement;
 export const W1Div = document.getElementById('W1') as HTMLElement;
-// export const W2Div = document.getElementById('W2') as HTMLElement;
-// export const W3Div = document.getElementById('W3') as HTMLElement;
+export const W2Div = document.getElementById('W2') as HTMLElement;
+export const W3Div = document.getElementById('W3') as HTMLElement;
 
 // FOOTER - ANCHOR TAG LINKING TO FOOD
 export const W0DivFoo = document.getElementById('W0F') as HTMLElement;
 export const W1DivFoo = document.getElementById('W1F') as HTMLElement;
-// export const W2DivFoo = document.getElementById('W2F') as HTMLElement;
-// export const W3DivFoo = document.getElementById('W3F') as HTMLElement;
+export const W2DivFoo = document.getElementById('W2F') as HTMLElement;
+export const W3DivFoo = document.getElementById('W3F') as HTMLElement;
 
 
 
