@@ -169,8 +169,8 @@ nav {
 
   // ANIMATION 0%
   height: 0px;
-  transition-duration: 0.5s;
-  transition-delay: 0.2s;
+  transition-duration: 0.4s;
+  transition-delay: 0.15s;
   padding: 0 20px 0px;
 
   img {
@@ -223,10 +223,10 @@ nav {
     opacity: 0;
     filter: blur(10px);
     transform: scale(90%);
-    padding: 150px 50px 50px;
   }
   100% {
     padding: 0;
+    height: 0;
   }
 }
 @keyframes heightcollapse {
@@ -234,11 +234,14 @@ nav {
   100% {height: 0;}
 }
 .featured-card-show { animation: inExpand 0.5s 0.5s forwards; }
-.featured-card-hide { 
-  animation: outExpand 1s forwards; 
-  img, .gradient-overlay {
-    animation: heightcollapse 0.5s 0.5s forwards; 
-  }
+.featured-card-hide { animation: outExpand 1s forwards; }
+.featured-image, .gradient-overlay {
+  width: 100%;
+  height: calc(100vh - 280px);
+  object-fit: cover;
+  border-radius: 20px;
+
+  display: block;
 }
 #featured-card {
   
@@ -250,15 +253,6 @@ nav {
     font-size: var(--text-xl);
     margin: 0;
     margin-bottom: 15px;
-  }
-
-  img, .gradient-overlay {
-    width: 100%;
-    height: calc(100vh - 280px);
-    object-fit: cover;
-    border-radius: 20px;
-
-    display: block;
   }
   
   .gradient-overlay {
@@ -427,7 +421,7 @@ footer {
 
   //ANIMATION
   visibility: hidden;
-  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) forwards;
+  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) 0.2s forwards;
   //ANIMATION END
 
   margin: 120px auto 0;
@@ -451,7 +445,7 @@ footer {
 
   //ANIMATION
   visibility: hidden;
-  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) 0.2s forwards;
+  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) 0.4s forwards;
   //ANIMATION END
   
   margin: 0 auto;
@@ -480,7 +474,7 @@ footer {
 
   //ANIMATION
   visibility: hidden;
-  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) 0.4s forwards;
+  animation: slideUp 0.5s cubic-bezier(.2,0,.3,1) 0.6s forwards;
   //ANIMATION END
 
   margin: 0 auto;
@@ -511,29 +505,52 @@ footer {
 .forms-css {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 20px;
 
   color: var(--text-black);
 
-  label {
+  .matter-radio { margin-right: 20px; }
+  .matter-textfield-outlined, .matter-checkbox { display: block; margin-top: 20px; }
+  .matter-button-contained { border-radius: 20px; margin-top: 20px; }
+
+  textarea { height: 200px; }
+
+  .infopanel {
+    background-color: var(--color-5);
+    color: var(--text-white);
+    
+    h1 { color: var(--text-white) !important; }
+
+    padding: 20px;
+    border-radius: 20px;
+    height: fit-content;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// TECHNOLOGY PAGE
+.tech {
+  p {
+    color: var(--text-black);
+    text-align: center;
+  }
+  img {
+    width: 250px;
+    max-width: 250px;
+    object-fit: cover;
     display: block;
-    margin-top: 20px;
-  }
-  button {
-    margin-top: 20px;
-  }
-  textarea {
-    height: 200px;
+    margin: 50px auto 0;
   }
 }
-.matter-button-contained {
-  border-radius: 20px;
-}
-
-
-
-
-
-
 
 
 

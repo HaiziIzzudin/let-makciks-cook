@@ -118,7 +118,7 @@ class customFooter extends HTMLElement {
       <div id="sitemap-main">
         <a href="index.html">Home</a>
         <a href="forms.html">Be Featured!</a>
-        <a href="#">Carrers</a>
+        <a href="technology.html">Web Technology</a>
         <a href="menu.xml">XML Table Transformations</a>
       </div>
 
@@ -161,6 +161,10 @@ Wrespon?.addEventListener('mouseleave', () => {
   Wrespon?.classList.remove('show'); 
   xbtn?.classList.remove('xbtn-show');
 });
+Wrespon?.addEventListener('click', () => { // when user has click one of the menu, close the dropdown
+  Wrespon?.classList.remove('show'); 
+  xbtn?.classList.remove('xbtn-show');
+});
 
 
 
@@ -187,6 +191,10 @@ Arespon?.addEventListener('mouseleave', () => {
   Arespon?.classList.remove('show'); 
   xbtn?.classList.remove('xbtn-show');
 });
+Arespon?.addEventListener('click', () => { // when user has click one of the menu, close the dropdown
+  Arespon?.classList.remove('show'); 
+  xbtn?.classList.remove('xbtn-show');
+});
 
 
 
@@ -210,6 +218,10 @@ MEddown?.addEventListener('mouseleave', () => {
   xbtn?.classList.remove('xbtn-show'); 
 });
 MErespon?.addEventListener('mouseleave', () => {
+  MErespon?.classList.remove('show'); 
+  xbtn?.classList.remove('xbtn-show');
+});
+MErespon?.addEventListener('click', () => { // when user has click one of the menu, close the dropdown
   MErespon?.classList.remove('show'); 
   xbtn?.classList.remove('xbtn-show');
 });
@@ -268,16 +280,18 @@ export const ME3DivFoo = document.getElementById('ME3F') as HTMLElement;
 
 
 // FEAT BUTTON CSS ANIMATION ON CLICK
-export const FeatBtn = document.getElementById('featured-btn') as HTMLButtonElement; // receive click
+export const FeatBtn = document.getElementById('featured-btn') as HTMLButtonElement | null; // receive click
 
 const showMenu = document.getElementById('specified-menu') as HTMLDivElement; // reactions
 const featuredcard = document.getElementById('featured-card') as HTMLDivElement; // reactions
 
-FeatBtn.addEventListener('click', () => {
-  showMenu.classList.add('specified-menu-show');
-  featuredcard.classList.add('featured-card-hide');
-  featuredcard.classList.remove('featured-card-show');
-})
+if (FeatBtn) {
+  FeatBtn.addEventListener('click', () => {
+    showMenu.classList.add('specified-menu-show');
+    featuredcard.classList.add('featured-card-hide');
+    featuredcard.classList.remove('featured-card-show');
+  });
+};
 
 
 
@@ -308,28 +322,28 @@ MEfatfooter.addEventListener('click', () => {
 
 
 
-// SHOW MENU LIST ON ALL THREE CATEGORIES
+// SHOW MENU LIST ON ALL THREE CATEGORIES in header
 
 const Wclickarea = document.getElementById('W-menulist') as HTMLDivElement; // receive click
 Wclickarea.addEventListener('click', () => {
   showMenu.classList.add('specified-menu-show');
   featuredcard.classList.add('featured-card-hide');
   featuredcard.classList.remove('featured-card-show');
-})
+});
 
 const Aclickarea = document.getElementById('A-menulist') as HTMLDivElement; // receive click
 Aclickarea.addEventListener('click', () => {
   showMenu.classList.add('specified-menu-show');
   featuredcard.classList.add('featured-card-hide');
   featuredcard.classList.remove('featured-card-show');
-})
+});
 
 const MEclickarea = document.getElementById('ME-menulist') as HTMLDivElement; // receive click
 MEclickarea.addEventListener('click', () => {
   showMenu.classList.add('specified-menu-show');
   featuredcard.classList.add('featured-card-hide');
   featuredcard.classList.remove('featured-card-show');
-})
+});
 
 
 

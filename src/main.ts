@@ -105,52 +105,58 @@ export function setupMenu(element: HTMLDivElement) {
       }
     menuHTML += `</section>`
     
-    element.innerHTML = menuHTML
+    if (element) { element.innerHTML = menuHTML }
   }
   
-  FeatBtn.addEventListener('click', () => setMenu('western', 1))
+
+
+  // FEATURED CARD 'LEARN MORE' BUTTON
+  if (FeatBtn) {
+    FeatBtn.addEventListener('click', () => setMenu('western', 1), true)
+  }
   
 
-  
-  // WESTERN - HEADER ANCHOR TAG LINKING TO FOOD
-  W0Div.addEventListener('click', () => setMenu('western', 0))
-  W1Div.addEventListener('click', () => setMenu('western', 1))
-  W2Div.addEventListener('click', () => setMenu('western', 2))
-  W3Div.addEventListener('click', () => setMenu('western', 3))
+  // while (true) {
+    // WESTERN - HEADER ANCHOR TAG LINKING TO FOOD
+  W0Div.addEventListener('click', () => setMenu('western', 0), true)
+  W1Div.addEventListener('click', () => setMenu('western', 1), true)
+  W2Div.addEventListener('click', () => setMenu('western', 2), true)
+  W3Div.addEventListener('click', () => setMenu('western', 3), true)
 
   // WESTERN - FOOTER ANCHOR TAG LINKING TO FOOD
-  W0DivFoo.addEventListener('click', () => setMenu('western', 0))
-  W1DivFoo.addEventListener('click', () => setMenu('western', 1))
-  W2DivFoo.addEventListener('click', () => setMenu('western', 2))
-  W3DivFoo.addEventListener('click', () => setMenu('western', 3))
+  W0DivFoo.addEventListener('click', () => setMenu('western', 0), true)
+  W1DivFoo.addEventListener('click', () => setMenu('western', 1), true)
+  W2DivFoo.addEventListener('click', () => setMenu('western', 2), true)
+  W3DivFoo.addEventListener('click', () => setMenu('western', 3), true)
 
 
 
   // ASIAN - HEADER ANCHOR TAG LINKING TO FOOD
-  A0Div.addEventListener('click', () => setMenu('asian', 0))
-  A1Div.addEventListener('click', () => setMenu('asian', 1))
-  A2Div.addEventListener('click', () => setMenu('asian', 2))
-  A3Div.addEventListener('click', () => setMenu('asian', 3))
+  A0Div.addEventListener('click', () => setMenu('asian', 0), true)
+  A1Div.addEventListener('click', () => setMenu('asian', 1), true)
+  A2Div.addEventListener('click', () => setMenu('asian', 2), true)
+  A3Div.addEventListener('click', () => setMenu('asian', 3), true)
 
   // ASIAN - FOOTER ANCHOR TAG LINKING TO FOOD
-  A0DivFoo.addEventListener('click', () => setMenu('asian', 0))
-  A1DivFoo.addEventListener('click', () => setMenu('asian', 1))
-  A2DivFoo.addEventListener('click', () => setMenu('asian', 2))
-  A3DivFoo.addEventListener('click', () => setMenu('asian', 3))
+  A0DivFoo.addEventListener('click', () => setMenu('asian', 0), true)
+  A1DivFoo.addEventListener('click', () => setMenu('asian', 1), true)
+  A2DivFoo.addEventListener('click', () => setMenu('asian', 2), true)
+  A3DivFoo.addEventListener('click', () => setMenu('asian', 3), true)
 
 
 
   // middleeast - HEADER ANCHOR TAG LINKING TO FOOD
-  ME0Div.addEventListener('click', () => setMenu('middleeast', 0))
-  ME1Div.addEventListener('click', () => setMenu('middleeast', 1))
-  ME2Div.addEventListener('click', () => setMenu('middleeast', 2))
-  ME3Div.addEventListener('click', () => setMenu('middleeast', 3))
+  ME0Div.addEventListener('click', () => setMenu('middleeast', 0), true)
+  ME1Div.addEventListener('click', () => setMenu('middleeast', 1), true)
+  ME2Div.addEventListener('click', () => setMenu('middleeast', 2), true)
+  ME3Div.addEventListener('click', () => setMenu('middleeast', 3), true)
 
   // middleeast - FOOTER ANCHOR TAG LINKING TO FOOD
-  ME0DivFoo.addEventListener('click', () => setMenu('middleeast', 0))
-  ME1DivFoo.addEventListener('click', () => setMenu('middleeast', 1))
-  ME2DivFoo.addEventListener('click', () => setMenu('middleeast', 2))
-  ME3DivFoo.addEventListener('click', () => setMenu('middleeast', 3))
+  ME0DivFoo.addEventListener('click', () => setMenu('middleeast', 0), true)
+  ME1DivFoo.addEventListener('click', () => setMenu('middleeast', 1), true)
+  ME2DivFoo.addEventListener('click', () => setMenu('middleeast', 2), true)
+  ME3DivFoo.addEventListener('click', () => setMenu('middleeast', 3), true)
+  // }
   
 
 
