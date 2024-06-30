@@ -13,5 +13,5 @@ export default defineConfig({
         },
     },
   },
-  assetsInclude: ['index.html', 'forms.html', 'menu.xml', 'menu.xsl'],
+  assetsInclude: ['*.xml', '*.xsl'],
 })
