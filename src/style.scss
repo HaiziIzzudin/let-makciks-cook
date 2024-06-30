@@ -149,7 +149,7 @@ nav {
 
 
 // MENU GRID LIST
-#W-menulist {
+#W-menulist, #A-menulist, #ME-menulist {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   position: fixed;
   top: 0;
@@ -570,7 +570,7 @@ footer {
       border-radius: 10px;
     }
   }
-  #W-menulist {
+  #W-menulist, #A-menulist, #ME-menulist {
     gap: 15px;
     img { border-radius: 10px; }
   }
@@ -581,7 +581,7 @@ footer {
 
 
 @media (max-width: 848px) {
-  #W-menulist {
+  #W-menulist, #A-menulist, #ME-menulist {
     grid-template-columns: 1fr 1fr;
     overflow: scroll;
   }
@@ -679,7 +679,7 @@ footer {
 
 
 @media (max-width: 417px) {
-  #W-menulist {
+  #W-menulist, #A-menulist, #ME-menulist {
     grid-template-columns: 1fr;
   }
   #section1 {

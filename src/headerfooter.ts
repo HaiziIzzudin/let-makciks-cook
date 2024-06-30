@@ -12,7 +12,7 @@ class customHeader extends HTMLElement {
       
       <div class="nav-flex">
       
-        <img src="images/logo.png" id="logo">
+        <img src="https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/logo.png" id="logo">
         
         <div class="c-iblk">
           
@@ -20,8 +20,8 @@ class customHeader extends HTMLElement {
           
           <span>
             <a href="#" id="W-ddown">Western<i class="fa-solid fa-caret-down"></i></a>
-            <a href="#">Asian<i class="fa-solid fa-caret-down"></i></a>
-            <a href="#">Middle East<i class="fa-solid fa-caret-down"></i></a>
+            <a href="#" id="A-ddown">Asian<i class="fa-solid fa-caret-down"></i></a>
+            <a href="#" id="ME-ddown">Middle East<i class="fa-solid fa-caret-down"></i></a>
           </span>
           
           <a href="forms.html" class="ripple">Want to be featured?</a>
@@ -39,7 +39,6 @@ class customHeader extends HTMLElement {
     
     
     <div id="W-menulist" class="">`
-    
     for (let k = 0; k < menulen('western'); k++) {
       navHTML += `
       <div id="W${k}">
@@ -47,10 +46,29 @@ class customHeader extends HTMLElement {
         <h2>${jsondata('western', k, 'title')}</h2>
       </div>
       `
-    }
+    } navHTML += `</div>
+    <div id="A-menulist" class="">`
+
+    for (let k = 0; k < menulen('asian'); k++) {
+      navHTML += `
+      <div id="A${k}">
+        <img src="${jsondata('asian', k, 'image')[0]}">
+        <h2>${jsondata('asian', k, 'title')}</h2>
+      </div>
+      `
+    } navHTML += `</div>
+    <div id="ME-menulist" class="">`
+
+    for (let k = 0; k < menulen('middleeast'); k++) {
+      navHTML += `
+      <div id="ME${k}">
+        <img src="${jsondata('middleeast', k, 'image')[0]}">
+        <h2>${jsondata('middleeast', k, 'title')}</h2>
+      </div>
+      `
+    } navHTML += `</div>`
     
     
-    navHTML += '</div>'
 
     this.innerHTML = navHTML
   }
@@ -83,19 +101,19 @@ class customFooter extends HTMLElement {
       <div id="sitemap-link">
         <h5>Western</h5>`
         for (let k = 0; k < menulen('western'); k++) {
-          footerHTML += `<a href="#" id="W${k}">${jsondata('western', k, 'title')}</a>`}
+          footerHTML += `<a href="#" id="W${k}F">${jsondata('western', k, 'title')}</a>`}
         footerHTML += `</div>
         
       <div id="sitemap-link">
         <h5>Asian</h5>`
         for (let k = 0; k < menulen('asian'); k++) {
-          footerHTML += `<a href="#" id="W${k}">${jsondata('asian', k, 'title')}</a>`}
+          footerHTML += `<a href="#" id="A${k}"F>${jsondata('asian', k, 'title')}</a>`}
         footerHTML += `</div>
       
       <div id="sitemap-link">
         <h5>Middle East</h5>`
         for (let k = 0; k < menulen('middleeast'); k++) {
-          footerHTML += `<a href="#" id="W${k}">${jsondata('middleeast', k, 'title')}</a>`}
+          footerHTML += `<a href="#" id="ME${k}F">${jsondata('middleeast', k, 'title')}</a>`}
         footerHTML += `</div>
       <div id="sitemap-link sitemap-main">
         <a href="index.html">Home</a>
@@ -114,12 +132,16 @@ customElements.define ('custom-footer', customFooter)
 
 
 
+///////////////////////////////////////
+/// ADD QUERY SELECTOR FOR DROPDOWN ///
+///////////////////////////////////////
+let xbtn = document.querySelector("#x-button");
 
-// ADD QUERY SELECTOR FOR DROPDOWN
+/// FOR WESTERN
 let Wddown = document.querySelector('#W-ddown');
 let Wrespon = document.querySelector('#W-menulist');
-let xbtn = document.querySelector("#x-button")
 
+// WDDOWN ON MOUSEENTER
 Wddown?.addEventListener('mouseenter', () => {
   Wrespon?.classList.add('show'); 
   xbtn?.classList.add('xbtn-show');
@@ -128,6 +150,8 @@ Wrespon?.addEventListener('mouseenter', () => {
   Wrespon?.classList.add('show'); 
   xbtn?.classList.add('xbtn-show');
 });
+
+// WDDOWN ON MOUSELEAVE
 Wddown?.addEventListener('mouseleave', () => {
   Wrespon?.classList.remove('show');
   xbtn?.classList.remove('xbtn-show'); 
@@ -139,10 +163,76 @@ Wrespon?.addEventListener('mouseleave', () => {
 
 
 
+/// FOR ASIAN
+let Addown = document.querySelector('#A-ddown');
+let Arespon = document.querySelector('#A-menulist');
+
+// Addown ON MOUSEENTER
+Addown?.addEventListener('mouseenter', () => {
+  Arespon?.classList.add('show'); 
+  xbtn?.classList.add('xbtn-show');
+});
+Arespon?.addEventListener('mouseenter', () => {
+  Arespon?.classList.add('show'); 
+  xbtn?.classList.add('xbtn-show');
+});
+
+// Addown ON MOUSELEAVE
+Addown?.addEventListener('mouseleave', () => {
+  Arespon?.classList.remove('show');
+  xbtn?.classList.remove('xbtn-show'); 
+});
+Arespon?.addEventListener('mouseleave', () => {
+  Arespon?.classList.remove('show'); 
+  xbtn?.classList.remove('xbtn-show');
+});
 
 
+
+/// FOR MIDDLEEAST
+let MEddown = document.querySelector('#ME-ddown');
+let MErespon = document.querySelector('#ME-menulist');
+
+// MEddown ON MOUSEENTER
+MEddown?.addEventListener('mouseenter', () => {
+  MErespon?.classList.add('show'); 
+  xbtn?.classList.add('xbtn-show');
+});
+MErespon?.addEventListener('mouseenter', () => {
+  MErespon?.classList.add('show'); 
+  xbtn?.classList.add('xbtn-show');
+});
+
+// MEddown ON MOUSELEAVE
+MEddown?.addEventListener('mouseleave', () => {
+  MErespon?.classList.remove('show');
+  xbtn?.classList.remove('xbtn-show'); 
+});
+MErespon?.addEventListener('mouseleave', () => {
+  MErespon?.classList.remove('show'); 
+  xbtn?.classList.remove('xbtn-show');
+});
+
+
+
+
+
+
+
+// HEADER - ANCHOR TAG LINKING TO FOOD
 export const W0Div = document.getElementById('W0') as HTMLElement;
 export const W1Div = document.getElementById('W1') as HTMLElement;
+// export const W2Div = document.getElementById('W2') as HTMLElement;
+// export const W3Div = document.getElementById('W3') as HTMLElement;
+
+// FOOTER - ANCHOR TAG LINKING TO FOOD
+export const W0DivFoo = document.getElementById('W0F') as HTMLElement;
+export const W1DivFoo = document.getElementById('W1F') as HTMLElement;
+// export const W2DivFoo = document.getElementById('W2F') as HTMLElement;
+// export const W3DivFoo = document.getElementById('W3F') as HTMLElement;
+
+
+
 
 
 
