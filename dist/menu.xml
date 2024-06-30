@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="menu.xsl"?>
 
+<!-- <recipe xmlns="https://www.w3schools.com"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="https://www.w3schools.com menu.xsd"> -->
 <recipe>
 	<western>
 		<menu>
 			<title>Shiitake Mushroom Soup</title>
 			<description>This is a vegetarian or vegan soup made with shiitake mushrooms as the main ingredient. It can be creamy or broth-based, and often includes other vegetables, herbs, and spices. Shiitake mushrooms have a rich, umami flavor that makes them a popular choice for soups.</description>
 			<by>Nana Aziz</by>
-			<preptime>5 minutes</preptime>
-			<kcal>227 kcal</kcal>
+			<preptime>5</preptime>
+			<kcal>227</kcal>
 
 			<ingredients>
 				<item>A packet of shitake mushrooms half mixed and half ground</item>
@@ -30,18 +33,18 @@
 			</instructions>
 
 			<images>
-        <image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup1.jpg</image>
-        <image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup2.jpg</image>
-        <image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup3.jpg</image>
-      </images>
+				<image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup1.jpg</image>
+				<image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup2.jpg</image>
+				<image>https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/Western/Shiitake/soup3.jpg</image>
+			 </images>
 		</menu>
 	
 		<menu>
 			<title>Spaghetti Aglio Olio Shrimp</title>
 			<description>This is a simple Italian pasta dish made with spaghetti, garlic, olive oil, and chili flakes. "Aglio e olio" translates to "garlic and oil" in Italian. The shrimp are typically cooked separately and added on top of the pasta for a protein boost. It's a quick and flavorful dish.</description>
 			<by>Hayati Abdullah</by>
-			<preptime>30 minutes</preptime>
-			<kcal>Approx. 484-584 kcal</kcal>
+			<preptime>30</preptime>
+			<kcal>484</kcal>
 
 			<ingredients>
 				<item>Boiled 1 packet spaghetti and do not discard the boiled water</item>
@@ -80,8 +83,8 @@
 			<title>Mac and cheese</title>
 			<description>This classic comfort food is made with macaroni pasta and a cheese sauce. There are countless variations, but common cheeses used include cheddar, Gruyere, or Parmesan. It can be baked with a crispy topping or served creamy.</description>
 			<by>Nur Shazrina</by>
-			<preptime>10 minutes</preptime>
-			<kcal>1192 kcal</kcal>
+			<preptime>10</preptime>
+			<kcal>1192</kcal>
 
 			<ingredients>
 				<item>160 g macaroni (boiled until soft)</item>
@@ -112,8 +115,8 @@
 			<title>Pizza Express</title>
 			<description>This is a British restaurant chain specializing in pizza. They offer a wide variety of pizzas with different toppings, crust styles, and sizes.</description>
 			<by>Rozita Jaafar Sekdek</by>
-			<preptime>5-10 minutes</preptime>
-			<kcal>Approx. 375-475 kcal</kcal>
+			<preptime>10</preptime>
+			<kcal>375</kcal>
 
 			<ingredients>
 				<item>A piece of frozen pizza dough</item>
@@ -143,8 +146,8 @@
 		  <title>Halal Pho</title>
 		  <description>Pho is a traditional Vietnamese soup consisting of broth, rice noodles, herbs, and meat. This Halal version of pho is both easy to make and healthy, offering a nutritious and delicious meal option.</description>
 		  <by>Ahmad Tran</by>
-		  <preptime>Approx. 30 minutes (excluding broth simmering time)</preptime>
-		  <kcal>Approx. 350-400 kcal per serving</kcal>
+		  <preptime>30</preptime>
+		  <kcal>400</kcal>
 	  
 			<ingredients>
 				<item>As many beef bones / chicken bones that you can lay your hands on</item>
@@ -175,7 +178,6 @@
 
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/1511_Easy-Vietnamese-Pho-Noodle-Soup_002-1.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Flag_of_Vietnam.svg.png?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Picture3.png?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Picture2.png?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/authentic-instant-pot-pho-recipe-1959w.jpg?raw=true</image>
@@ -188,8 +190,8 @@
 		  <title>Gulab Jamun</title>
 		  <description>Gulab Jamun is a popular dessert in South Asia, particularly in India, Pakistan, and Bangladesh. These delicious, soft, and spongy milk-solid-based sweets are soaked in rose-flavored sugar syrup, making them a delightful treat. This recipe is both easy to follow and relatively healthy, using simple ingredients that are halal-friendly.</description>
 		  <by>Shah Nawab</by>
-		  <preptime>15-20 minutes</preptime>
-		  <kcal>150-200 kcal per piece</kcal>
+		  <preptime>20</preptime>
+		  <kcal>200</kcal>
 	  
 		  <ingredients>
 				<item>For the Gulab Jamun Balls:</item>
@@ -215,7 +217,6 @@
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Gulab_jamun_(Gibraltar,_November_2020).jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Picture4.png?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Picture7.png?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/gulab-jamun-3-scaled.jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/gulab-jamun-recipe_9fb159dc2674f395436a64666227c988.jpeg?raw=true</image>
 			</images>
@@ -225,8 +226,8 @@
 		  <title>Kung Pao Chicken</title>
 		  <description>Kung Pao Chicken, a beloved dish originating from the Sichuan province in China, is known for its spicy, savory, and slightly sweet flavors. This recipe is easy to make with simple ingredients and clear instructions, and it’s healthy with lean protein, fresh vegetables, and controlled sodium.</description>
 		  <by>Julia Chua</by>
-		  <preptime>20 minutes</preptime>
-		  <kcal>300-350 kcal per serving</kcal>
+		  <preptime>20</preptime>
+		  <kcal>350</kcal>
 	  
 		  <ingredients>
 			<item>For the Chicken and Marinade:</item>
@@ -273,7 +274,6 @@
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Kung-Pao-Chicken-16-scaled-1120x1382.jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture5.png?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture6.png?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture8.png?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/kung-pao-chicken3.jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/maxresdefault.jpg?raw=true</image>
 			</images>
@@ -283,8 +283,8 @@
 		  <title>Okonomiyaki</title>
 		  <description>Okonomiyaki is a savory Japanese pancake that can be easily customized with various ingredients. This recipe is easy to prepare and offers a nutritious balance of vegetables and protein, making it a delightful and healthy meal option.</description>
 		  <by>Suraya Takahashi</by>
-		  <preptime>15-20 minutes</preptime>
-		  <kcal>500-600 kcal per pancake</kcal>
+		  <preptime>20</preptime>
+		  <kcal>600</kcal>
 	  
 		  <ingredients>
 				<item>Ingredients (makes 2 large pancakes):</item>
@@ -323,10 +323,8 @@
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/4241f206-c307-11e9-b975-06326e701dd4.jpeg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/AdobeStock_247014105.jpeg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Flag_of_Japan.svg.png?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Japanese-Sweet-Potato-Okonomiyaki1.jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Picture1.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Picture1.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/okonomiyaki.jpg?raw=true</image>
 			</images>
 		</menu>
@@ -338,8 +336,8 @@
 			<title>Hummus</title>
 			<description>Hummus is a creamy, rich, and flavorful dip that has become a beloved staple in many cuisines around the world. This traditional Middle Eastern dish, expertly crafted by renowned chef Yotam Ottolenghi, highlights the simple yet harmonious combination of chickpeas, tahini, lemon, and garlic</description>
 			<by>Yotam Ottolenghi</by>
-			<preptime>1 Hour</preptime>
-			<kcal>150 kcal</kcal>
+			<preptime>60</preptime>
+			<kcal>150</kcal>
 
 			<ingredients>
 				<item>1 1/2 cups dried chickpeas</item>
@@ -366,8 +364,6 @@
 
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%201.jpeg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%201.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%202.jpg?raw=true</image>	 -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%203.jpg?raw=true</image>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%204.jpg?raw=true</image>
 			</images>
@@ -377,8 +373,8 @@
 			<title>Falafel</title>
 			<description>Falafel is a classic Middle Eastern dish beloved for its crispy texture and savory flavor. These golden-brown balls of ground chickpeas, herbs, and spices are a popular street food and a versatile component in vegetarian and vegan diets.</description>
 			<by>Michaeal Solomonov</by>
-			<preptime>12 hours</preptime>
-			<kcal>50-60 kcal</kcal>
+			<preptime>12</preptime>
+			<kcal>60</kcal>
 
 			<ingredients>
 				<item>1 cup dried chickpeas</item>
@@ -405,11 +401,6 @@
 
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%201.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%202.jpg?raw=true</image> -->
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%203.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%204.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%205.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%206.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Homemade%20Falafel.jpeg?raw=true</image>
 			</images>
 		</menu>
@@ -418,8 +409,8 @@
 			<title>Tabbouleh</title>
 			<description>Tabbouleh is a refreshing and nutritious Middle Eastern salad that is perfect for warm weather or as a vibrant side dish to any meal. This salad, with its origins in Levantine cuisine, is known for its fresh ingredients and light, tangy flavor.</description>
 			<by>Claudia Roden</by>
-			<preptime>45 minutes</preptime>
-			<kcal>180 kcal</kcal>
+			<preptime>45</preptime>
+			<kcal>180</kcal>
 
 			<ingredients>
 				<item>1/2 cup fine bulgur wheat</item>
@@ -443,11 +434,7 @@
 
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Lebanese%20Tabbouleh%20Salad.jpeg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%201.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%202.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%203.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%203.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%204.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%205.jpg?raw=true</image>
 			</images>
 		</menu>
@@ -456,8 +443,8 @@
 			<title>Shakshuka</title>
 			<description>Shakshuka is a vibrant and flavorful Middle Eastern dish that features poached eggs in a rich, spiced tomato and bell pepper sauce. Originating from North Africa, this popular dish is perfect for breakfast, brunch, or even a light dinner</description>
 			<by>Einat Admony</by>
-			<preptime>30 minutes</preptime>
-			<kcal>300 kcal</kcal>
+			<preptime>30</preptime>
+			<kcal>300</kcal>
 
 			<ingredients>
 				<item>2 tablespoons olive oil</item>
@@ -468,8 +455,8 @@
 				<item>1 teaspoon paprika</item>
 				<item>1/4 teaspoon cayenne pepper</item>
 				<item>1 can (28 ounces) whole peeled tomatoes, with juices</item>
-				<item> Salt and pepper to taste</item>
-				<item> 6 large eggs</item>
+				<item>Salt and pepper to taste</item>
+				<item>6 large eggs</item>
 				<item>Fresh parsley, chopped, for garnish</item>
 			</ingredients>
 
@@ -483,11 +470,7 @@
 			
 			<images>
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Deluxe%20Shakshuka%20with%20Spicy%20Potatoes%20and%20Chickpeas.jpeg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%201.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%202.jpg?raw=true</image>
-				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%203.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%204.jpg?raw=true</image>
-				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%205.jpg?raw=true</image> -->
 				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%206.jpg?raw=true</image>
 			</images>
 			
