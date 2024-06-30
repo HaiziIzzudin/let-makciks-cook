@@ -182,7 +182,7 @@ nav {
   }
 }
 .show { 
-  height: 300px !important;
+  height: 280px !important;
   padding: 0 20px 20px !important;
 }
 
@@ -262,18 +262,19 @@ nav {
   }
   
   .gradient-overlay {
+    
+    position: relative;
+    height: calc(100vh - 280px - 100px);
+    width: calc(100% - 80px);
+    z-index: 10;
+    margin-top: calc(-100vh + 280px);
+    padding: 50px 40px;
+
     background: linear-gradient(5deg, 
     rgba(0,0,0,0.90) 0%, 
     rgba(0,0,0,0.70) 20%, 
     rgba(0,0,0,0.50) 40%, 
     rgba(0,0,0,0) 60%);
-
-    position: relative;
-    height: calc(100vh - 280px - 50px);
-    width: calc(100% - 40px);
-    z-index: 10;
-    margin-top: calc(-100vh + 280px);
-    padding: 0 0 50px 40px;
 
     display: flex;
     flex-direction: column-reverse;
@@ -369,10 +370,10 @@ footer {
     &:hover { text-decoration: underline; }
   }
   
-  .sitemap-main a { font-weight: bold; }
-  #W-sitemap-link, #A-sitemap-link, #ME-sitemap-link {
+  #W-sitemap-link, #A-sitemap-link, #ME-sitemap-link, #sitemap-main {
     a { margin: 30px 0; }
   }
+  #sitemap-main a { font-weight: bold; }
 }
 
 
@@ -467,8 +468,10 @@ footer {
 
   div {
     border-left: 1px solid var(--text-black);
+  &:last-child {
+    text-align: left;
     border-right: 1px solid var(--text-black);
-  &:last-child {text-align: left;}
+  }
   }
   
 }
@@ -583,6 +586,9 @@ footer {
 
 
 @media (max-width: 848px) {
+  
+  
+  
   #W-menulist, #A-menulist, #ME-menulist {
     grid-template-columns: 1fr 1fr;
     overflow: scroll;
@@ -598,6 +604,14 @@ footer {
   
   #featured-card {
     padding: 150px 20px 20px;
+
+    .gradient-overlay {
+      height: calc(100vh - 280px - 60px);
+      width: calc(100% - 50px);
+      margin-top: calc(-100vh + 280px);
+      padding: 30px 25px;
+    }
+
     h1 { font-size: var(--text-mid); }
   }
   
@@ -702,6 +716,7 @@ footer {
       
       &:last-child {
         text-align: left;
+        border-right: 0px solid var(--text-black);
         border-bottom: 1px solid var(--text-black);
         h5 { text-align: center; margin-left: 0 !important;}
       }

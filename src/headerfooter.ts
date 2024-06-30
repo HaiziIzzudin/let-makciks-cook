@@ -84,7 +84,7 @@ class customFooter extends HTMLElement {
     let footerHTML = `
     <footer>
       <div>
-        <img src="images/logo.png" id="logo">
+        <img src="https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/logo.png" id="logo">
         <p><i>Let Makciks Cook</i>is a website dedicated to sharing recipes and cooking tutorials for variety
         of menus, including Western, Asian, and Middle East.
         <br><br>
@@ -115,10 +115,11 @@ class customFooter extends HTMLElement {
         for (let k = 0; k < menulen('middleeast'); k++) {
           footerHTML += `<a href="#" id="ME${k}F">${jsondata('middleeast', k, 'title')}</a>`}
         footerHTML += `</div>
-      <div id="sitemap-link sitemap-main">
+      <div id="sitemap-main">
         <a href="index.html">Home</a>
         <a href="forms.html">Be Featured!</a>
         <a href="#">Carrers</a>
+        <a href="menu.xml">XML Table Transformations</a>
       </div>
 
     </footer>

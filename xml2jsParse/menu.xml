@@ -102,8 +102,9 @@
 			</instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Mac/mac.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Mac/mac2.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Mac/mac3.jpg?raw=true</image>
 			</images>
 		</menu>
 	
@@ -129,8 +130,10 @@
 			</instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Pizza/pizza.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Pizza/pizza2.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Pizza/pizza3.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Western/Pizza/pizza4.jpg?raw=true</image>
 			</images>
 		</menu>
 	</western>
@@ -171,8 +174,13 @@
 		  </instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/1511_Easy-Vietnamese-Pho-Noodle-Soup_002-1.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Flag_of_Vietnam.svg.png?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Picture3.png?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/Picture2.png?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/authentic-instant-pot-pho-recipe-1959w.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/instant-pot-pho-1-1649171262.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Pho/pho-recipe-4-650x939.jpg?raw=true</image>
 			</images>
 		</menu>
 	
@@ -205,8 +213,11 @@
 		  </instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Gulab_jamun_(Gibraltar,_November_2020).jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Picture4.png?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/Picture7.png?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/gulab-jamun-3-scaled.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Gulab/gulab-jamun-recipe_9fb159dc2674f395436a64666227c988.jpeg?raw=true</image>
 			</images>
 		</menu>
 	
@@ -257,8 +268,14 @@
 		  </instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/2020_04_27_takeout_style_kung_pao_chicken_2.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Kung-Pao-Chicken-1200-0879.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Kung-Pao-Chicken-16-scaled-1120x1382.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture5.png?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture6.png?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/Picture8.png?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/kung-pao-chicken3.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/KungPao/maxresdefault.jpg?raw=true</image>
 			</images>
 		</menu>
 	
@@ -304,8 +321,13 @@
 		  </instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/4241f206-c307-11e9-b975-06326e701dd4.jpeg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/AdobeStock_247014105.jpeg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Flag_of_Japan.svg.png?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Japanese-Sweet-Potato-Okonomiyaki1.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Picture1.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/Picture1.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/Asian/Okonomiyaki/okonomiyaki.jpg?raw=true</image>
 			</images>
 		</menu>
 	</asian>
@@ -343,8 +365,11 @@
 			</instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%201.jpeg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%201.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%202.jpg?raw=true</image>	 -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%203.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Hummus/Hummus%20step%204.jpg?raw=true</image>
 			</images>
 		</menu>
 		
@@ -379,8 +404,13 @@
 			</instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%201.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%202.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%203.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%204.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%205.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Falafel%20step%206.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Falafel/Homemade%20Falafel.jpeg?raw=true</image>
 			</images>
 		</menu>
 		
@@ -412,8 +442,13 @@
 			</instructions>
 
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Lebanese%20Tabbouleh%20Salad.jpeg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%201.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%202.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%203.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%203.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%204.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Tabbouleh/Tabbouleh%20step%205.jpg?raw=true</image>
 			</images>
 		</menu>
 		
@@ -447,8 +482,13 @@
 			</instructions>
 			
 			<images>
-				<image></image>
-				<image></image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Deluxe%20Shakshuka%20with%20Spicy%20Potatoes%20and%20Chickpeas.jpeg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%201.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%202.jpg?raw=true</image>
+				<!-- <image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%203.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%204.jpg?raw=true</image>
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%205.jpg?raw=true</image> -->
+				<image>https://github.com/HaiziIzzudin/let-makciks-cook/blob/main/images/MiddleEast/Shaksuha/Shakshuka%20step%206.jpg?raw=true</image>
 			</images>
 			
 		</menu>
