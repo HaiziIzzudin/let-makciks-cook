@@ -49,7 +49,7 @@
       `;s+="</div>",this.innerHTML=s}}customElements.define("custom-header",C);class D extends HTMLElement{connectedCallback(){let s=`
     <footer>
       <div>
-        <img src="images/logo.png" id="logo">
+        <img src="https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/logo.png" id="logo">
         <p><i>Let Makciks Cook</i>is a website dedicated to sharing recipes and cooking tutorials for variety
         of menus, including Western, Asian, and Middle East.
         <br><br>
