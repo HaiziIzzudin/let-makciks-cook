@@ -8,9 +8,10 @@ export default defineConfig({
         input: {
             index: fileURLToPath(new URL('index.html', import.meta.url)),
             forms: fileURLToPath(new URL('forms.html', import.meta.url)),
-            xml: fileURLToPath(new URL('./xml2jsParse/menu.xml', import.meta.url)),
+            xml: fileURLToPath(new URL('menu.xml', import.meta.url)),
+            xsl: fileURLToPath(new URL('menu.xsl', import.meta.url)),
         },
     },
   },
-  assetsInclude: ['**/*.xml'],
+  assetsInclude: ['index.html', 'forms.html', 'menu.xml', 'menu.xsl'],
 })

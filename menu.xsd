@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+targetNamespace="https://www.w3schools.com"
+xmlns="https://www.w3schools.com"
+elementFormDefault="qualified">
    
 
 
@@ -9,114 +12,21 @@
 			<xs:element name="western" minOccurs="1" maxOccurs="1">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="menu" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="title" type="xs:string"/>
-									<xs:element name="description" type="xs:string"/>
-									<xs:element name="by" type="xs:string"/>
-									<xs:element name="preptime" type="xs:string"/>
-									<xs:element name="kcal" type="xs:string"/>
-									<xs:element name="ingredients">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="instructions">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="step" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="images" minOccurs="0">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="image" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="menu" type="basic" minOccurs="1" maxOccurs="unbounded" />
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="asian" minOccurs="0" maxOccurs="1">
+			<xs:element name="asian" minOccurs="1" maxOccurs="1">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="menu" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="title" type="xs:string"/>
-									<xs:element name="description" type="xs:string"/>
-									<xs:element name="by" type="xs:string"/>
-									<xs:element name="preptime" type="xs:string"/>
-									<xs:element name="kcal" type="xs:string"/>
-									<xs:element name="ingredients">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="instructions">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="step" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="images" minOccurs="0">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="image" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="menu" type="basic" minOccurs="1" maxOccurs="unbounded" />
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
-			<xs:element name="middleeast" minOccurs="0" maxOccurs="1">
+			<xs:element name="middleeast" minOccurs="1" maxOccurs="1">
 				<xs:complexType>
 					<xs:sequence>
-						<xs:element name="menu" maxOccurs="unbounded">
-							<xs:complexType>
-								<xs:sequence>
-									<xs:element name="title" type="xs:string"/>
-									<xs:element name="description" type="xs:string"/>
-									<xs:element name="by" type="xs:string"/>
-									<xs:element name="preptime" type="xs:string"/>
-									<xs:element name="kcal" type="xs:string"/>
-									<xs:element name="ingredients">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="item" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="instructions">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="step" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-									<xs:element name="images" minOccurs="0">
-										<xs:complexType>
-											<xs:sequence>
-												<xs:element name="image" type="xs:string" maxOccurs="unbounded"/>
-											</xs:sequence>
-										</xs:complexType>
-									</xs:element>
-								</xs:sequence>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="menu" type="basic" minOccurs="1" maxOccurs="unbounded" />
 					</xs:sequence>
 				</xs:complexType>
 			</xs:element>
@@ -124,6 +34,41 @@
 	</xs:complexType>
 </xs:element>
 
+
+<!-- THIS IS "basic" FUNCTION, we know every country is same content type, y not reuse it -->
+<xs:complexType name="basic">
+	<xs:sequence>
+		<!-- single element tree -->
+		<xs:element name="title" type="xs:string"/>
+		<xs:element name="description" type="xs:string"/>
+		<xs:element name="by" type="xs:string"/>
+		<xs:element name="preptime" type="xs:integer"/>
+		<xs:element name="kcal" type="xs:integer"/>
+		
+		<!-- element tree has children -->
+		<xs:element name="ingredients" minOccurs="1" maxOccurs="1">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="item" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="instructions" minOccurs="1" maxOccurs="1">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="step" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+		<xs:element name="images" minOccurs="1" maxOccurs="1">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="image" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:complexType>
+		</xs:element>
+	</xs:sequence>
+</xs:complexType>
 
 
 

@@ -124,7 +124,7 @@ class customFooter extends HTMLElement {
         <a href="index.html">Home</a>
         <a href="forms.html">Be Featured!</a>
         <a href="technology.html">Web Technology</a>
-        <a href="https://github.com/HaiziIzzudin/let-makciks-cook">Source Code</a>
+        <a href="https://github.com/HaiziIzzudin/let-makciks-cook" target="_blank">Source Code</a>
         <a href="menu.xml">XML Table Transformations</a>
       </div>
 
