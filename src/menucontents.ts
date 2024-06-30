@@ -56,11 +56,11 @@ export function menulen(ethnicity:string) {
   const menuKindSelect = menuJSON.recipe // load menu.json, then recipe root tags
   let MenuArr: MenuType;
 
-  if (ethnicity = 'western') {
+  if (ethnicity === 'western') {
     MenuArr = (menuKindSelect.western[0]).menu // yg ni kita expose utk index selection
-  } else if (ethnicity = 'asian') {
+  } else if (ethnicity === 'asian') {
     MenuArr = (menuKindSelect.asian[0]).menu // yg ni kita expose utk index selection
-  } else if (ethnicity = 'middleeast') {
+  } else if (ethnicity === 'middleeast') {
     MenuArr = (menuKindSelect.middleeast[0]).menu // yg ni kita expose utk index selection
   } else {
     throw new Error('Invalid ethnicity');

@@ -1,5 +1,4 @@
 :root {
-  
   .light-theme {
     --color-1: #EACFC5;
     --color-2: #E0BBA8;
@@ -11,19 +10,36 @@
   
     --text-black: #1b1b1b;
     --text-white: #f0f0f0;
+
+  // MATTER CSS COMPONENTS COLOR CHANGE
+  --matter-primary-rgb: 134, 63, 11; // button bg
+  --matter-onprimary-rgb: 255, 255, 255; // btn text
+  --matter-onsurface-rgb: 0,0,0; // textbox outline & textbox label
   }
   .dark-theme {
-    --color-1: #863F0B;
+    --color-1: rgb(134, 63, 11);
     --color-2: #9D500B;
     --color-3: #1b1b1b;
     --color-4: #ddad98;
-    --color-5: #EACFC5;
+    --color-5: rgb(234, 207, 197);
 
     --color-3-alpha: rgba(27, 27, 27, 0.8);
   
     --text-black: #f0f0f0;
     --text-white: #1b1b1b;
+
+    --rgb-value: 255, 255, 255;
+    --rgb-value-dark: 134, 63, 11;
+
+    // MATTER CSS COMPONENTS COLOR CHANGE
+    --matter-primary-rgb: 255, 255, 255;
+    --matter-onprimary-rgb: 134, 63, 11;
+    --matter-onsurface-rgb: 255, 255, 255;
   }
+
+
+
+
 
   --footer-black: #1b1b1b;
   
@@ -172,7 +188,7 @@ nav {
 
 
 
-.fa-caret-down, .fa-arrow-right { margin-left: 12px; }
+.fa-caret-down, .fa-arrow-right, .fa-upload { margin-left: 12px; }
 #x-button { // desktop display is hidden
   margin: 0; padding: 0; 
   display: none;
@@ -354,7 +370,7 @@ footer {
   }
   
   .sitemap-main a { font-weight: bold; }
-  .sitemap-link a { margin: 30px 0;    }
+  #sitemap-link a { margin: 30px 0;    }
 }
 
 
@@ -486,6 +502,41 @@ footer {
 
 
 
+/// FORMS CSS
+.forms-css {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  color: var(--text-black);
+
+  label {
+    display: block;
+    margin-top: 20px;
+  }
+  button {
+    margin-top: 20px;
+  }
+  textarea {
+    height: 200px;
+  }
+}
+.matter-button-contained {
+  border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -543,7 +594,7 @@ footer {
     display: inline !important;
   }
   
-  .featured-card {
+  #featured-card {
     padding: 150px 20px 20px;
     h1 { font-size: var(--text-mid); }
   }
@@ -591,7 +642,7 @@ footer {
   footer {
     grid-template-columns: 1fr;
     padding: 20px;
-    .sitemap-link a { margin: 10px 0; }
+    #sitemap-link a { margin: 10px 0; }
   }
 
 
@@ -614,6 +665,12 @@ footer {
       object-fit: cover;
     }
   }
+
+  .forms-css {
+    grid-template-columns: 1fr;
+    label { margin-top: 10px; }
+    button { margin: 10px 0 20px; }
+  }
 }
 
 
@@ -623,6 +680,30 @@ footer {
 
 @media (max-width: 417px) {
   #W-menulist {
+    grid-template-columns: 1fr;
+  }
+  #section1 {
+    display: block;
+    img { width: 100%; }
+  }
+  #section2 {
+    display: grid;
+    grid-template-columns: 1fr;
+  
+    div {
+      border-left: 0px solid var(--text-black);
+      border-right: 0px solid var(--text-black);
+      border-top: 1px solid var(--text-black);
+      
+      &:last-child {
+        text-align: left;
+        border-bottom: 1px solid var(--text-black);
+        h5 { text-align: center; margin-left: 0 !important;}
+      }
+    }
+  }
+  #section34 {
+    display: grid;
     grid-template-columns: 1fr;
   }
 }

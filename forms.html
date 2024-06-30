@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script type="module" src="src/main.ts"></script>
+  <script type="module" src="src/menucontents.ts"></script>
+
+  <script type="module" src="src/theme.ts"></script>
+  <script type="module" src="src/headerfooter.ts"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" rel="stylesheet">
+</head>
+<body>
+
+  <custom-header></custom-header>
+
+  <div class="featured-card-show forms-css" id="featured-card" >
+    
+    <div>
+      <h1>Be featured!</h1>
+      <p>Fill in the forms below for a chance to be featured in our next recipe issue.</p>
+
+      <!-- SELECT ETHNICITY -->
+      <label class="matter-radio">
+        <input type="radio" name="Western">
+        <span>Western</span>
+      </label>
+      <label class="matter-radio">
+        <input type="radio" name="Western">
+        <span>Asian</span>
+      </label>
+      <label class="matter-radio">
+        <input type="radio" name="Western">
+        <span>Middle East</span>
+      </label>
+
+      <label class="matter-textfield-outlined">
+          <input placeholder=" "/>
+          <span>Menu Name</span>
+      </label>
+      
+      <label class="matter-textfield-outlined">
+          <textarea placeholder=" "></textarea>
+          <span>Brief Description</span>
+      </label>
+
+      <label class="matter-textfield-outlined">
+          <input placeholder=" "/>
+          <span>Author Name</span>
+      </label>
+      
+      <label class="matter-textfield-outlined">
+          <input placeholder=" "/>
+          <span>Preparation Time</span>
+      </label>
+
+      <label class="matter-textfield-outlined">
+          <input placeholder=" "/>
+          <span>Calorie Intake (KCal)</span>
+      </label>
+
+
+      <label class="matter-textfield-outlined">
+          <textarea placeholder="Ingredient 1
+Ingredient 2
+Ingredient 3"></textarea>
+          <span>Ingredients List</span>
+      </label>
+
+      <label class="matter-textfield-outlined">
+          <textarea placeholder="Instruction 1
+Instruction 2
+Instruction 3"></textarea>
+          <span>Instructions</span>
+      </label>
+
+      <button class="matter-button-contained">Upload 4 Photo <i class="fa-solid fa-upload"></i></button>
+      
+      <label class="matter-checkbox">
+        <input type="checkbox">
+        <span>I agree to the collection and use of my data in accordance with the Privacy Policy and Terms of Service.</span>
+      </label>
+      
+      <button class="matter-button-contained">Submit</button>
+    
+    </div>
+
+  </div>
+
+  <custom-footer></custom-footer>
+
+</body>

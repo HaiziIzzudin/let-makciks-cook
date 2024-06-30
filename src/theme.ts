@@ -8,18 +8,3 @@ if (theme == 'dark') {
 } else {
   document.querySelector('body')?.classList.add('light-theme');
 }
-
-// UNLESS OVERRIDING LIGHT/DARK CONFIGURATIONS
-let themeButton = document.querySelector('.theme-button');
-let myQuerySelector = document.querySelector("body");
-themeButton?.addEventListener('click', () => {
-  if (myQuerySelector?.classList.contains('light-theme')) {
-    console.log('changing to dakr theme')
-    myQuerySelector?.classList.remove('light-theme');
-    myQuerySelector?.classList.add('dark-theme');
-  } else {
-    console.log('changing to light theme')
-    myQuerySelector?.classList.remove('dark-theme');
-    myQuerySelector?.classList.add('light-theme');
-  }
-});
