@@ -1,4 +1,4 @@
-import * as menuJSON from './../xml2jsParse/menu.json'
+import * as menuJSON from './../menu.json'
 
 
 // TYPE INFERENCE

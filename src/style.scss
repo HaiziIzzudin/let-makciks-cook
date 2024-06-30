@@ -32,9 +32,9 @@
     --rgb-value-dark: 134, 63, 11;
 
     // MATTER CSS COMPONENTS COLOR CHANGE
-    --matter-primary-rgb: 255, 255, 255;
-    --matter-onprimary-rgb: 134, 63, 11;
-    --matter-onsurface-rgb: 255, 255, 255;
+    --matter-primary-rgb: 255, 255, 255; // button bg
+    --matter-onprimary-rgb: 134, 63, 11; // btn text
+    --matter-onsurface-rgb: 255, 255, 255; // textbox outline & textbox label
   }
 
 
@@ -532,6 +532,14 @@ footer {
 
 
 
+
+
+//searchbox
+.searchbox {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
 
 
 

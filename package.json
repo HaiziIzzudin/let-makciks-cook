@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node xml2jsParse/parser.cjs && vite --host",
-    "build": "node xml2jsParse/parser.cjs && tsc && vite build",
+    "dev": "node parser.cjs && vite --host",
+    "build": "node parser.cjs && tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

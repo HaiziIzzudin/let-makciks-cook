@@ -84,6 +84,11 @@ class customFooter extends HTMLElement {
     let footerHTML = `
     <footer>
       <div>
+        <label class="dark-theme matter-textfield-outlined searchbox">
+          <input placeholder=""/>
+          <span>🔎 Search Across 'Let Makciks Cook'</span>
+        </label>
+      
         <img src="https://raw.githubusercontent.com/HaiziIzzudin/let-makciks-cook/main/images/logo.png" id="logo">
         <p><i>Let Makciks Cook</i>is a website dedicated to sharing recipes and cooking tutorials for variety
         of menus, including Western, Asian, and Middle East.
@@ -119,6 +124,7 @@ class customFooter extends HTMLElement {
         <a href="index.html">Home</a>
         <a href="forms.html">Be Featured!</a>
         <a href="technology.html">Web Technology</a>
+        <a href="https://github.com/HaiziIzzudin/let-makciks-cook">Source Code</a>
         <a href="menu.xml">XML Table Transformations</a>
       </div>
 
