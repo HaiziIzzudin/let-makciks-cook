@@ -98,19 +98,19 @@ class customFooter extends HTMLElement {
         </p>
       </div>
 
-      <div id="sitemap-link">
+      <div id="W-sitemap-link">
         <h5>Western</h5>`
         for (let k = 0; k < menulen('western'); k++) {
           footerHTML += `<a href="#" id="W${k}F">${jsondata('western', k, 'title')}</a>`}
         footerHTML += `</div>
         
-      <div id="sitemap-link">
+      <div id="A-sitemap-link">
         <h5>Asian</h5>`
         for (let k = 0; k < menulen('asian'); k++) {
-          footerHTML += `<a href="#" id="A${k}"F>${jsondata('asian', k, 'title')}</a>`}
+          footerHTML += `<a href="#" id="A${k}F">${jsondata('asian', k, 'title')}</a>`}
         footerHTML += `</div>
       
-      <div id="sitemap-link">
+      <div id="ME-sitemap-link">
         <h5>Middle East</h5>`
         for (let k = 0; k < menulen('middleeast'); k++) {
           footerHTML += `<a href="#" id="ME${k}F">${jsondata('middleeast', k, 'title')}</a>`}
@@ -219,17 +219,45 @@ MErespon?.addEventListener('mouseleave', () => {
 
 
 
-// HEADER - ANCHOR TAG LINKING TO FOOD
+// WESTERN - HEADER ANCHOR TAG LINKING TO FOOD
 export const W0Div = document.getElementById('W0') as HTMLElement;
 export const W1Div = document.getElementById('W1') as HTMLElement;
 export const W2Div = document.getElementById('W2') as HTMLElement;
 export const W3Div = document.getElementById('W3') as HTMLElement;
 
-// FOOTER - ANCHOR TAG LINKING TO FOOD
+// WESTERN - FOOTER ANCHOR TAG LINKING TO FOOD
 export const W0DivFoo = document.getElementById('W0F') as HTMLElement;
 export const W1DivFoo = document.getElementById('W1F') as HTMLElement;
 export const W2DivFoo = document.getElementById('W2F') as HTMLElement;
 export const W3DivFoo = document.getElementById('W3F') as HTMLElement;
+
+
+
+// ASIAN - HEADER ANCHOR TAG LINKING TO FOOD
+export const A0Div = document.getElementById('A0') as HTMLElement;
+export const A1Div = document.getElementById('A1') as HTMLElement;
+export const A2Div = document.getElementById('A2') as HTMLElement;
+export const A3Div = document.getElementById('A3') as HTMLElement;
+
+// ASIAN - FOOTER ANCHOR TAG LINKING TO FOOD
+export const A0DivFoo = document.getElementById('A0F') as HTMLElement;
+export const A1DivFoo = document.getElementById('A1F') as HTMLElement;
+export const A2DivFoo = document.getElementById('A2F') as HTMLElement;
+export const A3DivFoo = document.getElementById('A3F') as HTMLElement;
+
+
+
+// MIDDLEEAST - HEADER ANCHOR TAG LINKING TO FOOD
+export const ME0Div = document.getElementById('ME0') as HTMLElement;
+export const ME1Div = document.getElementById('ME1') as HTMLElement;
+export const ME2Div = document.getElementById('ME2') as HTMLElement;
+export const ME3Div = document.getElementById('ME3') as HTMLElement;
+
+// MIDDLEEAST - FOOTER ANCHOR TAG LINKING TO FOOD
+export const ME0DivFoo = document.getElementById('ME0F') as HTMLElement;
+export const ME1DivFoo = document.getElementById('ME1F') as HTMLElement;
+export const ME2DivFoo = document.getElementById('ME2F') as HTMLElement;
+export const ME3DivFoo = document.getElementById('ME3F') as HTMLElement;
 
 
 
@@ -239,24 +267,36 @@ export const W3DivFoo = document.getElementById('W3F') as HTMLElement;
 
 
 // FEAT BUTTON CSS ANIMATION ON CLICK
-const menuclickarea = document.getElementById('W-menulist') as HTMLDivElement; // receive click
 export const FeatBtn = document.getElementById('featured-btn') as HTMLButtonElement; // receive click
-export const fatfooter = document.getElementById('sitemap-link') as HTMLDivElement; // receive click
 
 const showMenu = document.getElementById('specified-menu') as HTMLDivElement; // reactions
 const featuredcard = document.getElementById('featured-card') as HTMLDivElement; // reactions
 
-menuclickarea.addEventListener('click', () => {
-  showMenu.classList.add('specified-menu-show');
-  featuredcard.classList.add('featured-card-hide');
-  featuredcard.classList.remove('featured-card-show');
-})
 FeatBtn.addEventListener('click', () => {
   showMenu.classList.add('specified-menu-show');
   featuredcard.classList.add('featured-card-hide');
   featuredcard.classList.remove('featured-card-show');
 })
-fatfooter.addEventListener('click', () => {
+
+
+
+
+/// FOR EVERY CATEGORIES W, A, ME click event listener for fat footer
+
+export const Wfatfooter = document.getElementById('W-sitemap-link') as HTMLDivElement; // receive click
+Wfatfooter.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
+export const Afatfooter = document.getElementById('A-sitemap-link') as HTMLDivElement; // receive click
+Afatfooter.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
+export const MEfatfooter = document.getElementById('ME-sitemap-link') as HTMLDivElement; // receive click
+MEfatfooter.addEventListener('click', () => {
   showMenu.classList.add('specified-menu-show');
   featuredcard.classList.add('featured-card-hide');
   featuredcard.classList.remove('featured-card-show');
@@ -265,6 +305,30 @@ fatfooter.addEventListener('click', () => {
 
 
 
+
+
+// SHOW MENU LIST ON ALL THREE CATEGORIES
+
+const Wclickarea = document.getElementById('W-menulist') as HTMLDivElement; // receive click
+Wclickarea.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
+
+const Aclickarea = document.getElementById('A-menulist') as HTMLDivElement; // receive click
+Aclickarea.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
+
+const MEclickarea = document.getElementById('ME-menulist') as HTMLDivElement; // receive click
+MEclickarea.addEventListener('click', () => {
+  showMenu.classList.add('specified-menu-show');
+  featuredcard.classList.add('featured-card-hide');
+  featuredcard.classList.remove('featured-card-show');
+})
 
 
 
