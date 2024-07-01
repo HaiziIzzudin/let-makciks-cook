@@ -8,8 +8,10 @@ export default defineConfig({
         input: {
             index: fileURLToPath(new URL('index.html', import.meta.url)),
             forms: fileURLToPath(new URL('forms.html', import.meta.url)),
+            tech: fileURLToPath(new URL('technology.html', import.meta.url)),
             xml: fileURLToPath(new URL('menu.xml', import.meta.url)),
             xsl: fileURLToPath(new URL('menu.xsl', import.meta.url)),
+            xmlcss: fileURLToPath(new URL('xml.css', import.meta.url)),
         },
     },
   },
